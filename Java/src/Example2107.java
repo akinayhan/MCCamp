@@ -100,12 +100,12 @@ public class Example2107 {
 	     System.out.println("1. Sýnavýn %30'u :" + percentExam1);
 	     
 	     System.out.print("2. Vize Notunuzu Giriniz: ");
-	     exam2=input.nextInt();
+	     exam2=input.nextDouble();
 	     percentExam2= exam2*30/100;
 	     System.out.println("2. Sýnavýn %30'u :" + percentExam2);
 	     
 	     System.out.print("Final Notunuzu Giriniz: ");
-	     exam3=input.nextInt();
+	     exam3=input.nextDouble();
 	     percentExam3= exam3*30/100;
 	     System.out.println("Final Sýnavýnýn %40'ý :" + percentExam3);
 	     
