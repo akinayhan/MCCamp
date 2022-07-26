@@ -65,12 +65,15 @@ public class Example2107 {
 		
 		Scanner input = new Scanner(System.in);
 		int number;
-		do {
-			System.out.print("Sayý Girin : ");
+						
+		while (true) {
+			System.out.print("Bir sayý girin : ");
 			number = input.nextInt();
+			if(number ==0) {
+				break;
+			}
 			System.out.println("Girilen Sayýnýn 2 katý : " + number*2);
-		}	
-		while (number != 0);
+		}
 		*/
 		
 		/*
@@ -113,6 +116,31 @@ public class Example2107 {
 	     System.out.print("Sene Sonu Notunuz: " + average);
 		*/
 		
+		//veya 
+		
+		/*
+		
+		//String[] notlar = new String[] {"","vize1","vize2","final"};
+		//int[] oranlar =new int[] {0,30,30,40};
+		
+		Scanner input = new Scanner(System.in);
+		double toplam=0,girilen=0;
+		int oran=30;
+		for(int i=1;i<=3;i++) {
+			System.out.println(i + ".  Notu giriniz : ");
+			girilen = input.nextDouble();
+			if(i==3) {
+				oran=40;
+			}
+			double sonuc = girilen*oran/100;
+			toplam+=sonuc;
+			System.out.println(sonuc);
+		}
+		System.out.println(toplam);
+		
+		*/
+		
+		
 		/*
 		//9) Klavyeden bir tam sayý okutunuz. Bu Sayý ile klavyeden okunan diðer 10 sayýyý çarpma iþlemi uygulayýnýz.
 		// Sonuçlarý ekrana yazdýrýnýz.
@@ -126,6 +154,10 @@ public class Example2107 {
 			System.out.println("Kendi Sayýnýz Ýle Çarpýmý : " + myNumber*number);
 		}
 		*/
+		
+		
+		
+		
 		
 	}
 }
